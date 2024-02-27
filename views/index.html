@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Request Header Parser</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>Request Header Parser Microservice</h1>
+        <p>
+          The request header parser microservice is a web API using the 'whoami' endpoint. It extracts and returns information from the HTTP request headers of incoming requests. The 3 particular headers it uses are: x-forwarded-for, accept-language, and user-agent.
+        </p>
+        <ol>
+          It is designed to fulfill specific requirements:
+          <li>User's IP address</li>
+          <li>Preferred language</li>
+          <li>Software information</li>
+        </ol>
+        <h2>Example Usage:</h2>
+        <p>
+          <a href="api/whoami">https://request-header-microservice-sf.glitch.me/api/whoami</a>
+        </p>
+
+        <h2>Example Output:</h2>
+        <code>
+        {
+          "ipaddress":"159.20.14.100",
+          "language":"en-US,en;q=0.5",
+          "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64;<br>                      rv:50.0) Gecko/20100101 Firefox/50.0"
+        }
+        </code>          
+      </div>
+      <div class="footer">
+        <p>
+          This project is designed based on requirements for freeCodeCamp's Backend Development and APIs Certification.
+        </p>
+      </div>
+   </body>
+
+
+</html>
